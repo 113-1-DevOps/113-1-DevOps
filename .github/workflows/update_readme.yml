@@ -11,7 +11,8 @@ jobs:
   update-activity:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4.2.1
       - name: README Activity Update
         uses: TheDanniCraft/activity-log@v0.0.5
         with:
