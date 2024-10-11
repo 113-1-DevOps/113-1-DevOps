@@ -4,7 +4,7 @@ name: Update GitHub Activity
 
 on:
   schedule:
-    # - cron: "*/30 * * * *"  # Runs every 30 minutes
+    - cron: "*/30 * * * *"  # Runs every 30 minutes
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Update GitHub Activity
-        uses: TheDanniCraft/activity-log@v1
+        uses: StarrySkyYX/activity-log@t1
         with:
           GITHUB_USERNAME: "StarrySkyYX"
           GITHUB_TOKEN: ${{ secrets.ACTIONSECRET2024 }} 
